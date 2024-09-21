@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "aiPlanner",
-    "slug": "aiPlanner",
+    "name": "postMan",
+    "slug": "postMan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,10 +16,14 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "CAMERA"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gambler.postMan"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +35,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "163fa9dc-dd2c-49cf-ac58-3c61f832dbb7"
+      }
     }
   }
 }
